@@ -139,9 +139,7 @@ body {
     position: sticky;
     top: 2rem;
     left: 0;
-    height: 10rem;
-    width: 2rem;
-    background-color: blue;
+    margin-top: 2rem;
 }
 .address-row-cont {
     display: flex;
@@ -151,12 +149,33 @@ body {
     height: 2rem;
 }
 
+.address-col {
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    border: 1px solid #dfe4ea;
+}
+
+.address-row {
+    height: 2rem;
+    width: 5rem;
+}
+
 .cells-cont {
     position: absolute;
     top: 0;
     left: 2rem;
-    width: 10rem;
-    height: 10rem;
+}
+
+.cell {
+    height: 2rem;
+    width: 5rem;
+    border: 1px solid #dfe4ea;
+}
+
+.row-cont {
+    display: flex;
+
 }
 
 .address-col {
