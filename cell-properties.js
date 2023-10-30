@@ -48,7 +48,8 @@ bold.addEventListener("click", (e) => {
 function activecell(address) {
     let [rid, cid] = decodeRIDCIDFromAddress(address);
     // Access cell and storage object
-    let cell = document.querySelector(`.cell[rid="${rid}"][cid="${cid}"]`)
+    let cell = document.querySelector(`.cell[rid="${rid}"][cid="${cid}"]`);
+    
 }
 
 function decodeRIDCIDFromAddress(address) {
