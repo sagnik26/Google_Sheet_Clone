@@ -15,7 +15,7 @@ for(let i=0; i<rows; i++) {
             BGcolor: "#000000",  // Just for indication purpose,
             value: "",
             formula: "",
-            children: [],
+            children: [], 
         }
         sheetRow.push(cellProp);
     }
@@ -37,7 +37,7 @@ let centerAlign = alignment[1];
 let rightAlign = alignment[2];
 
 let activeColorProp = "#d1d8e0";
-let inactiveColorProp = "#ecf0f1"
+let inactiveColorProp = "#ecf0f1";
 
                             // *****APPLICATION OF TWO WAY BINDING***** //
                             // *****Attach property listeners***** //
@@ -175,7 +175,7 @@ function addListenerToAttachCellProperties(cell) {
         let address = addressBar.value;
         let [rid, cid] = decodeRIDCIDFromAddress(address);
         let cellProp = sheetDB[rid][cid];
-        console.log('CELL-PROP', cellProp);
+        // console.log('CELL-PROP', cellProp);
 
         // Apply cell properties
         cell.style.fontWeight = cellProp.bold ? "bold" : "normal"; 
