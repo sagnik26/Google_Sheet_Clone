@@ -28,8 +28,16 @@ formulaBar.addEventListener("keydown", (e) => {
     }
 });
 
-function updateChildrenCells(address) {
-    
+function updateChildrenCells(parentAddress) {
+    let [parentCell, parentCellProp] = activeCell(parentAddress);
+    let children = parentCellProp.children;
+
+    for(let i=0; i<children.length; i++) {
+        let childAddress = children[i];
+        let [childCell, childCellprop] = activecell(childAddress);
+        let formula = childCellprop.formula;
+        
+    }
 }
 
 function addChildToParent(formula) {
